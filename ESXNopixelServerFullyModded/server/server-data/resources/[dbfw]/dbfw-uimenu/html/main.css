@@ -1,0 +1,126 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  position: relative;
+  width: 300px;
+  max-width: 600px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #5ab2ff;
+  border-radius: 8px 8px 0px 0px;
+  color: white;
+}
+
+#backbtn {
+  position: fixed;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.6);
+  top: 27.6%;
+  left: 80.2%;
+}
+
+#backbtn:hover {
+  color: rgb(255, 255, 255);
+}
+
+#closebtn {
+  position: fixed;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.6);
+  top: 27.6%;
+  left: 94%;
+}
+
+#closebtn:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navigation {
+  position: relative;
+  top: 20%;
+  left: 80%;
+  margin-top: 15%;
+  width: fit-content;
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 750px;
+  overflow-y: hidden;
+}
+
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 300px;
+  max-width: 600px;
+  max-height: 750px;
+  overflow-y: auto;
+}
+
+.mainmenu a {
+  display: block;
+  background-color: rgb(55, 55, 55);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+  color: rgb(243, 243, 243);
+  border-bottom: 1px solid rgb(45, 45, 45);
+}
+
+.mainmenu a:hover {
+    background-color: #5ab2ff;
+}
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: fit-content;
+}
+
+.submenu a {
+  font-size: 12px;
+  background-color: rgb(106, 106, 106);
+}
+
+.submenu a:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: none;
+    border: none;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+    margin: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(45, 45, 45);
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color:#B51B26;
+}
+
+.yellow {
+  color: yellow;
+}

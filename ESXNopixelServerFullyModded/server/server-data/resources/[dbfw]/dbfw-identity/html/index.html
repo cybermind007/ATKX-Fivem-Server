@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div class="bar-top"></div>
+		<div class="bar-bottom"></div>
+			<form id="register">
+				    <div class="box">
+					<h1 class="box-heading">New Character</h1>
+					<label class="input-name" for="firstname"><center>First Name:</center></label>
+					<center><input id="firstname" type="text"><br></center>
+					<label class="input-name" for="lastname"><center>Last Name:</center></label>
+					<center><input id="lastname" type="text"><br></center>
+					<label class="input-name" for="height"><center>Height:</center></label>
+					<center><input id="height" type="text" placeholder="140-200cm"><br><center>
+					<label class="input-name" for="dateofbirth"><center>Date of birth:</center></label>
+					<center><input id="dateofbirth" type="date"><br></center>
+					<label class="input-name" for="radio"><center>Gender:</center></label>
+					<input type="radio" id="radio1" name="sex" value="m" checked/>
+					<label class="genderstyle" for="radio1">Male</label>
+					<input type="radio" id="radio2" name="sex" value="f" />
+					<label class="genderstyle" for="radio2">Female</label>
+					<center><button id="submit" type="submit">Create Character</button></center>
+			</form>
+		</div>
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>

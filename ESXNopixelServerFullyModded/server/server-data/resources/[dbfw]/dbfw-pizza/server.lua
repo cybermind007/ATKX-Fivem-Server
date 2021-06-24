@@ -1,0 +1,6 @@
+RegisterServerEvent('dbfw-pizza:cash')
+AddEventHandler('dbfw-pizza:cash',function(cash)
+    TriggerEvent('es:getPlayerFromId',source, function(user)
+        user.addMoney(cash)
+    end)
+end)

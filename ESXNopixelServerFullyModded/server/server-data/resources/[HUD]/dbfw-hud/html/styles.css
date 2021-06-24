@@ -1,0 +1,601 @@
+#statusHud {
+	width: 40%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+    /* border: 1px solid red; */
+}
+
+body{
+    display: none;
+	overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.money-container {
+    position: absolute;
+    right: 5vw;
+    top: 7vh;
+}
+
+#cash {
+    color: white;
+}
+
+#icon {
+	height: 21px;
+	width: auto;
+	margin-right: 10px;
+}
+
+.money-cash,.money-bank {
+    display: none;
+    /*float:right;*/
+    font-family: 'gta-ui';
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+    padding: 4px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 0;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 0;
+}
+
+.money-cash {
+    color: rgb(210, 210, 210);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    font-family: 'gta-ui';
+
+}
+
+.money-bank {
+    color: rgb(167, 167, 167);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    font-family: 'gta-ui';
+
+    top: 55px;
+}
+
+#plus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    font-family: 'gta-ui';
+
+    color: #f0f0f0;
+}
+
+#minus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    font-family: 'gta-ui';
+
+    color: #f0f0f0;
+}
+
+.minus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    font-family: 'gta-ui';
+
+    color: #801e1f;
+}
+
+.munnie {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    font-family: 'gta-ui';
+
+    color: #277418;
+}
+
+.moneyupdate {
+    float: right;
+    font-family: 'gta-ui';
+
+    padding-left: 0.5vw;
+}
+
+.plus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    font-family: 'gta-ui';
+
+    color: #277418;
+}
+
+#statusHud .bar {
+	position: absolute;
+	background-color: black;
+	padding: 10px;
+	border-radius: 100%;
+	opacity: 80%;
+	width: 25px;
+	clip-path: circle(50%);
+	height: 25px;
+}
+
+#statusHud .fill-bar {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 0;
+    top: 100%;
+    z-index: 0;
+    opacity: 80%;
+}
+
+.bar img {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+}
+
+@font-face {
+    font-family: 'gta-ui';
+    src: url('gta-ui.ttf');
+}
+
+.bar p {
+	position: absolute;
+	margin: 0;
+	color: white;
+	text-align: center;
+	top: 5px;
+	left: 0;
+	right: 0;
+}
+
+.bar-speed {
+	width: 35px !important;
+	height: 35px !important;
+	font-size: 2rem;
+	font-family: 'gta-ui';
+}
+
+.bar-speed .fill-bar{
+	width: 55px !important;
+	height: 55px !important;
+}
+
+.bar.dummy {
+	background-color: transparent !important;
+}
+
+/* .bar {
+    width: calc(12.5% - 4px - 1%);
+    min-height: 25.5px;
+    float: left;
+
+
+    margin-right: 0.6%;
+    margin-left: 0.6%;
+} */
+
+/* .barHealth {
+    width: calc(12.5% - 4px - 1%);
+    min-height: 25.5px;
+    float: left;
+
+
+    margin-right: 0.6%;
+    margin-left: 0.6%;
+}
+
+.barOxy {
+    width: calc(12.5% - 4px - 1%);
+    min-height: 25.5px;
+    float: left;
+
+
+    margin-right: 0.6%;
+    margin-left: 0.6%;
+} */
+
+
+.voice {
+    position: absolute;
+    left: 101.5%;
+}
+.voice > div {
+    width: 4px;
+    height: 4px;
+    border: 2px solid #E6E6E5;
+    background: #E6E6E5;
+    border-radius: 50%;
+    /* background-color: rgba(0,0,0,0.4); */
+    margin-bottom: 2px;
+}
+
+.talking > div {
+    border: 2px solid yellow;
+    background: yellow;
+}
+
+.dev {
+    position: absolute;
+    left: 105.7%;
+}
+.dev > div {
+    width: 4px;
+    height: 4px;
+    border: 2px solid #F55713;
+    background: #F55713;
+    border-radius: 50%;
+    /* background-color: rgba(0,0,0,0.4); */
+    margin-bottom: 2px;
+}
+
+.devDebug {
+    position: absolute;
+    left: 109.5%;
+}
+.devDebug > div {
+    width: 4px;
+    height: 4px;
+    border: 2px solid #1B6CE6;
+    background: #1B6CE6;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+/* .barIconHealth {
+    position: relative;
+    width: calc(12.5% - 4px - 4px);
+	height: 18.5px;
+    bottom: 7px;
+    left: 17px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 99;
+}
+
+.barIconArmor {
+    position: relative;
+    width: calc(12.5% - 4px - 4px);
+	height: 18.5px;
+    bottom: 17px;
+    left: 70.5px;
+    position: absolute;
+    z-index: 99;
+}
+
+.barIconYemek {
+    position: relative;
+    width: calc(12.5% - 4px - 4px);
+	height: 18.5px;
+    bottom: 18px;
+    left: 123px;
+    position: absolute;
+    z-index: 99;
+}
+
+.barIconSu {
+    position: relative;
+    width: calc(12.5% - 4px - 4px);
+    height: 18.5px;
+    bottom: 17px;
+    left: 174.5px;
+    position: absolute;
+    z-index: 99;
+}
+
+.barIconOxy {
+    position: relative;
+    width: calc(12.5% - 4px - 4px);
+	height: 18.5px;
+    bottom: 18px;
+    left: 279px;
+    position: absolute;
+    z-index: 99;
+}
+
+.barIconStress {
+    position: relative;
+    width: calc(12.5% - 4px - 4px);
+	height: 18.5px;
+    bottom: 17px;
+    left: 225.5px;
+    position: absolute;
+    z-index: 99;
+} */
+
+.corners {
+    width: calc(12.5% - 4px);
+    height: 29px;
+    position: absolute;
+    z-index: 100;
+    margin: -2px;
+    opacity: 0;
+}
+
+.danger {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(88%) saturate(7076%) hue-rotate(358deg) brightness(100%) contrast(122%);
+}
+.dangerGrad {
+    background: rgb(207, 0, 0) !important;
+}
+
+
+
+@media(min-width:2100px){
+	.stat,
+	.stat .icon {
+		height: 44px;
+	}
+}
+
+@media(min-width:2200px){
+	.stat,
+	.stat .icon {
+		height: 46px;
+	}
+	.status{
+		width:280px;
+	}
+	.stat{
+		width:251px;
+	}
+	.stat span {
+		font-size: 14px;
+		line-height: 15px;
+		margin-top: 2px;
+	}
+}
+
+@media(min-width:2300px){
+	.stat,
+	.stat .icon {
+		height: 48px;
+	}
+}
+
+@media(min-width:2400px){
+	.stat,
+	.stat .icon {
+		height: 50px;
+	}
+	.status{
+		width:300px;
+	}
+	.stat{
+		width:271px;
+	}
+}
+
+@media(min-width:2500px){
+	.stat,
+	.stat .icon {
+		height: 52px;
+	}
+}
+
+
+@media(max-width:1800px){
+	.stat,
+	.stat .icon {
+		height: 38px;
+	}
+}
+
+@media(max-width:1700px){
+	.stat,
+	.stat .icon {
+		height: 36px;
+	}
+}
+
+@media(max-width:1600px){
+	.stat,
+	.stat .icon {
+		height: 34px;
+	}
+	.status{
+		width:240px;
+	}
+	.stat{
+		width:211px;
+	}
+	.stat span {
+		font-size: 12px;
+		line-height: 12px;
+		margin-top: 2px;
+	}
+	.stat .icon img {
+		margin-top: 2px;
+	}
+}
+
+@media(max-width:1500px){
+	.stat,
+	.stat .icon {
+		height: 32px;
+	}
+}
+
+@media(max-width:1400px){
+	.stat,
+	.stat .icon {
+		height: 30px;
+	}
+	.status{
+		width:225px;
+	}
+	.stat{
+		width:196px;
+		margin-bottom: 4px;
+	}
+}
+
+@media(max-width:1300px){
+	.stat,
+	.stat .icon {
+		height: 28px;
+	}
+}
+
+@media(max-width:1200px){
+	.stat,
+	.stat .icon {
+		height: 26px;
+	}
+	.stat span{
+		font-size:10px;
+		line-height: 10px;
+	}
+	.status{
+		width:200px;
+	}
+	.stat{
+		width:171px;
+	}
+}
+
+@media(max-width:1100px){
+	.stat,
+	.stat .icon {
+		height: 24px;
+	}
+}
+
+.progress {
+	-webkit-transition: 0.35s stroke-dashoffset;
+	-o-transition: 0.35s stroke-dashoffset;
+	transition: 0.35s stroke-dashoffset;
+	-webkit-transform: rotate(140deg);
+	-ms-transform: rotate(140deg);
+	transform: rotate(140deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.backgroundCircle, .outer {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.speed-txt{
+	font-size: 1rem !important;
+	top: 33px !important;
+}
+
+.direction {
+  color: #111111;
+  background-color: rgba(226, 226, 226, 0);
+  /* border-radius: 5px; */
+  width: 100px;
+  height: 26px;
+  overflow: hidden;
+  float: left;
+}
+
+.direction>.image {
+  height: 100%;
+  background-position: center center;
+  background-size: 400px;
+  background-repeat: repeat;
+  width: 800%;
+  z-index: 1;
+  background-image: url('compass.png');
+}
+
+.compass-container {
+    position: absolute;
+    width: 10.2vh;
+    height: 4.5vh;
+    bottom: 26.8vh;
+    left: 7.62vw;
+    overflow: hidden;
+}
+
+.compass-ui {
+    position: absolute;
+    width: 81.6vh;
+    height: 100%;
+    right: 0vh;
+}
+
+.compass-current {
+    position: absolute;
+    width: 100%;
+    height: 3vh;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.compass-current > span {
+    position: relative;
+    top: -1.6vh;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.big-degree {
+	font-family: 'gta-ui';
+    position: relative;
+    float: left;
+    height: 60%;
+    width: 3vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-shadow: 1px 1px 0px #000000;
+    text-align: center;
+    border-radius: .2vh;
+    font-size: 2.3vh;
+    line-height: 3vh;
+    top: 1.5vh;
+    box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.5);
+}
+
+.big-degree-line {
+    color: white !important;
+    font-size: 1.2vh !important;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.degree-line {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 0.8vh;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-size: 1.1vh;
+    margin-top: 1.6vh;
+    line-height: 3.5vh;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.degree-label {
+    position: absolute;
+    bottom: 2.4vh;
+    left: -.6vh;
+    font-size: 1.8vh;
+    color: white;
+    /* font-family: sans-serif; */
+	font-family: 'gta-ui';
+    font-variant: normal !important;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.ui-car-street {
+    font-size: 27px;
+    position: absolute;
+    bottom: 0.28vh;
+    left: 18.5vw;
+	font-family: 'gta-ui';
+
+    text-shadow: 1px 1px 0px #000000;
+    color: #ffffff;
+}

@@ -1,2 +1,2 @@
 #Do not save server-data folder to git repository.
-/ESXFivemServerFullyModded/server/server-data/*
+ESXNopixelServerFullyModded\server\server-data\resources\[dbfw-assets]\*

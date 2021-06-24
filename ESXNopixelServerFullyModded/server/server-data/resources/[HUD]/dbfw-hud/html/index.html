@@ -1,0 +1,281 @@
+<html>
+
+<head>
+    <!-- <script src="nui://game/ui/jquery.js" type="text/javascript"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class="ui-car-street"></div>
+    <div class="compass-container">
+        <div class="compass-current"><span>|</span></div>
+        <div class="compass-ui">
+            <div class="degree-line big-degree-line"><span class="degree-label">NW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">N</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">E</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">S</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">W</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">N</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">E</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">S</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">W</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">N</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">E</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">S</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">W</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">N</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">E</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SE</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">S</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">SW</span>|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="big-degree">W</div>
+            <div class="degree-line big-degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line">|</div>
+            <div class="degree-line big-degree-line"><span class="degree-label">NW</span>|</div>
+        </div>
+    </div>
+
+    <div class="money-container">
+        <div class="money-content">
+            <div class="money-cash">
+                <p class="munnie" style="color:#3baae0">&dollar;&nbsp;<span id="cash">0</span></p>
+            </div>
+            <div class="money-bank">
+                <p class="munnie" style="color:white"><img id="icon" src="https://i.imgur.com/fy4utmT.png" alt=""/>&nbsp;<span id="bank">0</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="statusHud">
+        <div class="bar bar-nos">
+            <div class="fill-bar nos"></div>
+            <img class="barIconNos" src="img/nos.svg" style="filter: invert(1);"></img>
+        </div>
+        <div class="bar bar-fuel">
+            <div class="fill-bar fuel"></div>
+            <img class="barIconFuel" src="img/gas-station.svg" style="filter: invert(1);"></img>
+        </div>
+        <div class="bar-speed bar">
+            <div class="fill-bar speed"></div>
+            <p class="speed-num" >255</p>
+            <p class="speed-txt" >mph</p>
+        </div>
+        <div class="bar dummy">
+            <div class="fill-bar"></div>
+        </div>
+        <div class="bar dummy">
+            <div class="fill-bar"></div>
+        </div>
+        <div class="bar dummy">
+            <div class="fill-bar"></div>
+        </div>
+        
+        <div class="bar">
+            <div class="fill-bar health"></div>
+            <img class="barIconHealth" src="img/heart.svg"></img>
+        </div>
+        <div class="bar">
+            <div class="fill-bar armour"></div>
+            <img class="barIconArmor" src="img/shield.svg"></img>
+        </div>
+        <div class="bar">
+            <div class="fill-bar hunger"></div>
+            <img class="barIconYemek" src="img/burger.svg"></img>
+        </div>
+        <div class="bar">
+            <div class="fill-bar water"></div>
+            <img class="barIconSu" src="img/water.svg"></img>
+        </div>
+        <div class="bar">
+            <div class="fill-bar oxygen"></div>
+            <img class="barOxy" src="img/oxygen.svg"></img>
+        </div>
+
+
+        <div class="bar">
+            <div class="fill-bar stress"></div>
+            <img class="barIconStress" src="img/brain.svg"></img>
+        </div>
+        <div class="bar dummy">
+            <div class="fill-bar"></div>
+        </div>
+        <div class="bar dummy">
+            <div class="fill-bar"></div>
+        </div>
+        <div class="bar bar-microphone">
+            <div class="fill-bar voice"></div>
+            <img class="barIconStress" src="img/microphone.svg" style="filter: invert(1);"></img>
+
+        </div>
+        <div class="bar bar-engine">
+            <div class="fill-bar"></div>
+            <img class="barIconStress" src="img/engine-green.png"></img>
+        </div>
+        <div class="bar bar-belt">
+            <div class="fill-bar"></div>
+            <img class="barIconStress" src="img/seatbelt.png"></img>
+        </div>
+
+        
+        
+        <!-- <div id="varSetVoice" class="voice" style="position: relative; top: 10; left: 265;">
+            <div class="voice3" style="position: relative; right: 3%;"></div>
+            <div class="voice2" style="position: relative; right: 1%;"></div>
+            <div class="voice1" style="position: relative; right: 3%;"></div>
+        </div> -->
+        <!-- <div id="varDev" class="dev" style="position: relative; bottom: 35; left: 234;">
+            <div class="dev1"></div>
+            <div class="dev1"></div>
+            <div class="dev1"></div>
+        </div>
+
+        <div id="varDevDebug" class="devDebug" style="position: relative; bottom: 35; left: 234;">
+            <div class="dev2"></div>
+            <div class="dev2"></div>
+            <div class="dev2"></div>
+        </div> -->
+    </div>
+</body>
+
+<script src="script.js" type="text/javascript"></script>
+</html>
