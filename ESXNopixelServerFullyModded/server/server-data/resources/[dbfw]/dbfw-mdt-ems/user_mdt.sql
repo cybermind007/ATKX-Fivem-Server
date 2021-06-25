@@ -1,4 +1,4 @@
-USE `zap747063-1`;
+USE `essentialmode`;
 
 CREATE TABLE `user_mdt_ems` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,

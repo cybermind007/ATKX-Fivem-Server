@@ -1,4 +1,4 @@
-/*USE `dbfw-base`;*/
+USE `dbfw-base`;
 
 CREATE TABLE `addon_account` (
 	`name` varchar(60) NOT NULL,

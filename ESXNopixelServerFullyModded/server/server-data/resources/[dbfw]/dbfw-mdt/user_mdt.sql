@@ -1,4 +1,4 @@
-/*USE `llrp-mode`;*/
+USE `llrp-mode`;
 
 CREATE TABLE `user_mdt` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,

@@ -13,8 +13,8 @@
 
 
 -- Dumping database structure for essentialmode
-CREATE DATABASE IF NOT EXISTS `zap747063-1` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `zap747063-1`;
+CREATE DATABASE IF NOT EXISTS `essentialmode` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `essentialmode`;
 
 -- Dumping structure for table essentialmode.fine_types
 CREATE TABLE IF NOT EXISTS `fine_types_ems` (
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `fine_types_ems` (
   `amount` int(11) DEFAULT NULL,
   `category` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table essentialmode.fine_types: ~70 rows (approximately)
 /*!40000 ALTER TABLE `fine_types_ems` DISABLE KEYS */;

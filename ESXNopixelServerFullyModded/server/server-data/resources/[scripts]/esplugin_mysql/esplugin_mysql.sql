@@ -13,8 +13,8 @@
 
 
 -- Dumping database structure for essentialmode
-CREATE DATABASE IF NOT EXISTS `zap747063-1` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin */;
-USE `zap747063-1`;
+CREATE DATABASE IF NOT EXISTS `essentialmode` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin */;
+USE `essentialmode`;
 
 -- Dumping structure for table essentialmode.users
 CREATE TABLE IF NOT EXISTS `users` (

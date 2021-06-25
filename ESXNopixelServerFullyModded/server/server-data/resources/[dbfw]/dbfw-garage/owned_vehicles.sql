@@ -13,8 +13,8 @@
 
 
 -- Dumping database structure for onecity
-CREATE DATABASE IF NOT EXISTS `zap747063-1` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `zap747063-1`;
+CREATE DATABASE IF NOT EXISTS `onecity` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `onecity`;
 
 -- Dumping structure for table onecity.owned_vehicles
 CREATE TABLE IF NOT EXISTS `owned_vehicles` (

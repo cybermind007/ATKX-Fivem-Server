@@ -1,7 +1,7 @@
 {
-    "user": "zap747063-1",
-    "password": "PJlcrFGDNk4qwxPD",
-    "host": "mysql-mariadb-27-104-lax.zap-hosting.com",
+    "user": "root",
+    "password": "",
+    "host": "localhost",
     "port": 3306,
-    "database": "zap747063-1"
+    "database": "nopixel"
 }

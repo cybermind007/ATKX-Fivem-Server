@@ -1,4 +1,4 @@
-/*USE `dbfw-base`;*/
+USE `dbfw-base`;
 
 CREATE TABLE `society_moneywash` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,

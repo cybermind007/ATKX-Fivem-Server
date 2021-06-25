@@ -14,8 +14,8 @@
 
 
 -- Dumping database structure for nopixel
-CREATE DATABASE IF NOT EXISTS `zap747063-1` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
-USE `zap747063-1`;
+CREATE DATABASE IF NOT EXISTS `nopixel` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `nopixel`;
 
 -- Dumping structure for table nopixel.addon_account
 CREATE TABLE IF NOT EXISTS `addon_account` (

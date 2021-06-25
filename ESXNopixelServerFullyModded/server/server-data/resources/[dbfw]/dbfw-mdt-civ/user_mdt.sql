@@ -1,4 +1,4 @@
-/*USE `essentialmode`;*/
+USE `essentialmode`;
 
 CREATE TABLE `user_mdt` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
